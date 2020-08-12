@@ -31,7 +31,7 @@ def get_english_meaning(file_path, text)
 
   emoticons_hash.each do |key, value|
     if value[:japanese] == text
-      return value[:english]
+      return key
     end
 
   end
