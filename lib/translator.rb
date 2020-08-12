@@ -32,11 +32,9 @@ def get_english_meaning(file_path, text)
   emoticons_hash.each do |key, value|
     if value[:japanese] == text
       return key
-      next
-    else
-      return "Sorry, that emoticon was not found"
     end
 
   end
+  return "Sorry, that emoticon was not found"
 
 end
