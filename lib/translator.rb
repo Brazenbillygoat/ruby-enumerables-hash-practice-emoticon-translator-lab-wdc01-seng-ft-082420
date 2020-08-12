@@ -14,7 +14,7 @@ end
 
 def get_japanese_emoticon(file_path, text)
     # code goes here
-  # emoticons_hash = load_library(file_path)
+  emoticons_hash = load_library(file_path)
 
   emoticons_hash.each do |key, value|
     if value[:english] == text
